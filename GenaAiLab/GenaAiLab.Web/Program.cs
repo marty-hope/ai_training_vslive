@@ -5,7 +5,7 @@ using GenaAiLab.Web.Services.Ingestion;
 using OpenAI;
 
 var builder = WebApplication.CreateBuilder(args);
-builder.AddServiceDefaults();
+builder.AddServiceDefaults(); //easily adds aspire dashboard
 builder.Services.AddRazorComponents().AddInteractiveServerComponents();
 
 var openai = builder.AddAzureOpenAIClient("openai");
